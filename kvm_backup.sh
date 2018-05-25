@@ -1,9 +1,9 @@
 #!/bin/bash
 
 #
-# This is who we'll back up
+# This is who we'll back up where the var is the path to file containing list of domains ie  machine1 machine2 machine3
 #
-machines=$(</usr/local/scripts/conf/machines.conf)
+machines=$(<$1)
 
 #
 # Keep the house clean
