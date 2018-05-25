@@ -3,7 +3,7 @@
 #
 # This is who we'll back up
 #
-machines="dnsserver2 PLEX IPA Unifi transmission lemp-dev-01 BITTORRENT CONFLUENCE wordpressdev"
+machines=$(</usr/local/scripts/conf/machines.conf)
 
 #
 # Keep the house clean
