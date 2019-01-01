@@ -26,6 +26,17 @@ log_dir="/mnt/THEVAULT/Backups/logs"
 #
 #=================================================================
 
+
+#
+# Check if the backup destination is present. If not, exit. 
+#
+if [ ! -d "${backup_dir}" ]; then 
+  echo "The backup dir ${backup_dir} is not available. Exiting...";
+  exit 2
+fi
+
+
+
 #
 # Timestamp for the log file
 #
